@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from distutils.core import setup
+from setuptools import setup
 from setup.my_install_data import *
 
 setup (name = "PyCAPTCHA",
@@ -7,6 +7,7 @@ setup (name = "PyCAPTCHA",
        description = "A Python framework for CAPTCHA tests",
        maintainer = "Micah Dowty",
        maintainer_email = "micah@navi.cx",
+       url= " http://github.com:Vayana/PyCAPTCHA",
        license = "MIT",
        packages = [
            'Captcha',
@@ -20,9 +21,7 @@ setup (name = "PyCAPTCHA",
            base_dir      = 'install_lib',
            copy_to       = 'Captcha/data',
            strip_dirs    = 2,
-           template      = [
-               'graft Captcha/data',
-           ],
+           template      = [ 'graft Captcha/data', ],
        )],
        )
 
