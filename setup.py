@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from setuptools import setup
-from setup.my_install_data import *
+from pycaptcha_setup.my_install_data import *
 
 setup (name = "PyCAPTCHA",
        version = "0.4-vayana",
@@ -12,6 +12,7 @@ setup (name = "PyCAPTCHA",
        packages = [
            'Captcha',
            'Captcha.Visual',
+           'pycaptcha_setup',
        ],
        cmdclass = {
            'install_data': my_install_data,
